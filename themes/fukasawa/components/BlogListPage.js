@@ -1,4 +1,4 @@
-import { AdSlot } from '@/components/GoogleAdsense'
+
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
 import { deepClone, isBrowser } from '@/lib/utils'
@@ -73,7 +73,7 @@ const BlogListPage = ({ page = 1, posts = [], postCount, siteInfo }) => {
           ))}
           {siteConfig('ADSENSE_GOOGLE_ID') && (
             <div className='p-3'>
-              <AdSlot type='flow' />
+              
             </div>
           )}
         </div>
